@@ -2,7 +2,7 @@ FROM bbb-common-web AS builder
 
 RUN mkdir -p /root/tools \
  && cd /root/tools \
- && wget http://services.gradle.org/distributions/gradle-3.5-bin.zip \
+ && wget https://services.gradle.org/distributions/gradle-3.5-bin.zip \
  && unzip gradle-3.5-bin.zip \
  && ln -s gradle-3.5 gradle
 
