@@ -109,8 +109,8 @@ services:
       ENABLE_REST_API: 1
       PORT: 3478
     ports:
-      - ${EXTERNAL_IP}:3478:3478/udp
-      - ${EXTERNAL_IP}:3478:3478/tcp
+      - 3478:3478/udp
+      - 3478:3478/tcp
     networks:
       - default
     labels:
